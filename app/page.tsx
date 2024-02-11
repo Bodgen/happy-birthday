@@ -33,7 +33,7 @@ function Home() {
         let maxVolume = Math.max(...dataArray);
 
         // Adjust the threshold value based on testing
-        if (maxVolume > 700) {
+        if (maxVolume > 230) {
           // alert("Blowing detected!");
           setFlamesVisible(false);
           stream.getTracks().forEach(track => track.stop());
