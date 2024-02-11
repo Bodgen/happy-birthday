@@ -76,7 +76,7 @@ function Home() {
         <button onClick={startAudioCapture}>{blowingStarted ? "Blow now!" : "Start Blowing"}</button>
         <div>
           <audio controls autoPlay loop>
-            <source src="/audio/hbd.mp3" type="audio/mp3" />
+            <source src="https://bodgen.github.io/happy-birthday/audio/hbd.mp3" type="audio/mp3" />
             Your browser does not support the audio element.
           </audio>
         </div>
