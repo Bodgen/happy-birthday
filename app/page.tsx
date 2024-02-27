@@ -58,7 +58,8 @@ function Home() {
   return (
     <StyledHome data-testid="container">
       <div className="home-container">
-        <div className="title">Happy Birthday To You Leon</div>
+        <img src="https://bodgen.github.io/happy-birthday/img_1.png" alt="img"/>
+        <div className="title">Happy Birthday To You Ktya &#10084;&#65039;</div>
         <div id="birthday-cake">
           <div className="cake">
             <div className="middle"></div>
@@ -98,13 +99,18 @@ const StyledHome = styled.div`
   .home-container{
     display: flex;
     flex-direction:column;
-    gap:3rem;
+    gap:20px;
     align-items: center;
     justify-content: center;
     .title{
       font-size: 2rem;
       color:#5caff3;
       font-family: comic sans ms;
+      margin-bottom: 0;
+    }
+    
+    img {
+      margin-top: 20px;
     }
   }
   .buttons{
