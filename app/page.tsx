@@ -103,7 +103,7 @@ const StyledHome = styled.div`
     align-items: center;
     justify-content: center;
     .title{
-      font-size: 2rem;
+      font-size: 1.5rem;
       color:#5caff3;
       font-family: comic sans ms;
       margin-bottom: 0;
@@ -111,6 +111,7 @@ const StyledHome = styled.div`
     
     img {
       margin-top: 20px;
+        height: 150px;
     }
   }
   .buttons{
