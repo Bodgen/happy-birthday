@@ -57,36 +57,105 @@ function Home() {
 
   return (
     <StyledHome data-testid="container">
-      <div className="home-container">
-        <img src="https://bodgen.github.io/happy-birthday/img_1.png" alt="img"/>
-        <div className="title">Happy Birthday To You Ktya &#10084;&#65039;</div>
-        <div id="birthday-cake">
-          <div className="cake">
-            <div className="middle"></div>
-            <div className="chocs"></div>
-            <div className="top"></div>
-          </div>
-          <div className="candles" onClick={handleCandleClick}>
-            <div className="flame" style={{ opacity: flamesVisible ? 1 : 0 }}></div>
-            <div className="flame2" style={{ opacity: flamesVisible ? 1 : 0 }}></div>
-            <div className="flame3" style={{ opacity: flamesVisible ? 1 : 0 }}></div>
-            <div className="text">Happy Birthday!</div>
-            <div className="shadows"></div>
-          </div>
+      <div className="row">
+        <div className="block">
+          <video autoPlay loop muted playsInline>
+            <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.mov" type="video/quicktime"/>
+            <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.webm" type="video/webm"/>
+            Ваш браузер не підтримує відео з прозорістю.
+          </video>
         </div>
-        <button onClick={startAudioCapture}>{blowingStarted ? "Blow now!" : "Start Blowing"}</button>
-        <div>
-          <audio controls autoPlay loop>
-            <source src="https://bodgen.github.io/happy-birthday/audio/hbd.mp3" type="audio/mp3" />
-            Your browser does not support the audio element.
-          </audio>
+        <div className="block start_screen">
+          <video autoPlay loop muted playsInline>
+            <source src="https://bodgen.github.io/happy-birthday/start_screen.mov" type="video/quicktime"/>
+            <source src="https://bodgen.github.io/happy-birthday/Screen_WithAlpha.webm" type="video/webm"/>
+            Ваш браузер не підтримує відео з прозорістю.
+          </video>
+        </div>
+        <div className="block">
+          <video autoPlay loop muted playsInline>
+            <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.mov" type="video/quicktime"/>
+            <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.webm" type="video/webm"/>
+            Ваш браузер не підтримує відео з прозорістю.
+          </video>
         </div>
       </div>
-    </StyledHome >
+      <div className="row">
+        <div className="block start_screen">
+          <video autoPlay loop muted playsInline>
+            <source src="https://bodgen.github.io/happy-birthday/start_screen.mov" type="video/quicktime"/>
+            <source src="https://bodgen.github.io/happy-birthday/Screen_WithAlpha.webm" type="video/webm"/>
+            Ваш браузер не підтримує відео з прозорістю.
+          </video>
+        </div>
+        <div className="block">
+          <video autoPlay loop muted playsInline>
+            <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.mov" type="video/quicktime"/>
+            <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.webm" type="video/webm"/>
+            Ваш браузер не підтримує відео з прозорістю.
+          </video>
+        </div>
+        <div className="block start_screen">
+          <video autoPlay loop muted playsInline>
+            <source src="https://bodgen.github.io/happy-birthday/start_screen.mov" type="video/quicktime"/>
+            <source src="https://bodgen.github.io/happy-birthday/Screen_WithAlpha.webm" type="video/webm"/>
+            Ваш браузер не підтримує відео з прозорістю.
+          </video>
+        </div>
+      </div>
+      {/*<div className="home-container">*/ }
+      {/*  <img src="https://bodgen.github.io/happy-birthday/img_1.png" alt="img"/>*/ }
+      {/*  <div className="title">Happy Birthday To You Ktya &#10084;&#65039;</div>*/ }
+      {/*  <div id="birthday-cake">*/ }
+      {/*    <div className="cake">*/ }
+      {/*      <div className="middle"></div>*/ }
+      {/*      <div className="chocs"></div>*/ }
+      {/*      <div className="top"></div>*/ }
+      {/*    </div>*/ }
+      {/*    <div className="candles" onClick={handleCandleClick}>*/ }
+      {/*      <div className="flame" style={{ opacity: flamesVisible ? 1 : 0 }}></div>*/ }
+      {/*      <div className="flame2" style={{ opacity: flamesVisible ? 1 : 0 }}></div>*/ }
+      {/*      <div className="flame3" style={{ opacity: flamesVisible ? 1 : 0 }}></div>*/ }
+      {/*      <div className="text">Happy Birthday!</div>*/ }
+      {/*      <div className="shadows"></div>*/ }
+      {/*    </div>*/ }
+      {/*  </div>*/ }
+      {/*  <button onClick={startAudioCapture}>{blowingStarted ? "Blow now!" : "Start Blowing"}</button>*/ }
+      {/*  <div>*/ }
+      {/*    <audio controls autoPlay loop>*/ }
+      {/*      <source src="https://bodgen.github.io/happy-birthday/audio/hbd.mp3" type="audio/mp3" />*/ }
+      {/*      Your browser does not support the audio element.*/ }
+      {/*    </audio>*/ }
+      {/*  </div>*/ }
+      {/*</div>*/ }
+    </StyledHome>
   );
 }
 
 const StyledHome = styled.div`
+    .row {
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        max-width: 100vw;
+        padding-bottom: 10px;
+        border-bottom: 2px solid red;
+    }
+
+    .block {
+        border-right: 2px solid red;
+        margin-right: 10px;
+        width: auto;
+        padding-right: 10px;
+    }
+
+    .start_screen {
+        width: 200px;
+    }
+
+    video {
+        height: 100%;
+    }
   display: flex;
   position: fixed;
   left: 0;
@@ -103,7 +172,7 @@ const StyledHome = styled.div`
     align-items: center;
     justify-content: center;
     .title{
-      font-size: 1.5rem;
+      font-size: 2rem;
       color:#5caff3;
       font-family: comic sans ms;
       margin-bottom: 0;
@@ -111,7 +180,6 @@ const StyledHome = styled.div`
     
     img {
       margin-top: 20px;
-        height: 150px;
     }
   }
   .buttons{
