@@ -55,11 +55,12 @@ function Home() {
   };
 
 
+  // @ts-ignore
   return (
     <StyledHome data-testid="container">
       <div className="row">
         <div className="block">
-          <video autoPlay loop muted playsInline>
+          <video autoPlay loop muted playsInline style="max-width: 400px">
             <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.webm" type="video/webm"/>
             <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.mov" type="video/quicktime"/>
             Ваш браузер не підтримує відео з прозорістю.
@@ -155,6 +156,7 @@ const StyledHome = styled.div`
 
     video {
         height: 100%;
+        max-width: 200px;
     }
   display: flex;
   position: fixed;
