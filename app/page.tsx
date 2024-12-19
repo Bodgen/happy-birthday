@@ -60,18 +60,18 @@ function Home() {
       <div className="row">
         <div className="block">
           <video autoPlay loop muted playsInline>
-            <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.mov" type="video/quicktime"/>
             <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.webm" type="video/webm"/>
+            <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.mov" type="video/quicktime"/>
             Ваш браузер не підтримує відео з прозорістю.
           </video>
         </div>
-        <div className="block start_screen">
-          <video autoPlay loop muted playsInline>
-            <source src="https://bodgen.github.io/happy-birthday/start_screen.mov" type="video/quicktime"/>
-            <source src="https://bodgen.github.io/happy-birthday/Screen_WithAlpha.webm" type="video/webm"/>
-            Ваш браузер не підтримує відео з прозорістю.
-          </video>
-        </div>
+        {/*<div className="block start_screen">*/ }
+        {/*  <video autoPlay loop muted playsInline>*/}
+        {/*    <source src="https://bodgen.github.io/happy-birthday/start_screen.mov" type="video/quicktime"/>*/}
+        {/*    <source src="https://bodgen.github.io/happy-birthday/Screen_WithAlpha.webm" type="video/webm"/>*/}
+        {/*    Ваш браузер не підтримує відео з прозорістю.*/}
+        {/*  </video>*/}
+        {/*</div>*/}
         {/*<div className="block">*/}
         {/*  <video autoPlay loop muted playsInline>*/}
         {/*    <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.mov" type="video/quicktime"/>*/}
