@@ -60,7 +60,7 @@ function Home() {
     <StyledHome data-testid="container">
       <div className="row">
         <div className="block">
-          <video autoPlay loop muted playsInline style="max-width: 400px">
+          <video autoPlay loop muted playsInline>
             <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.webm" type="video/webm"/>
             <source src="https://bodgen.github.io/happy-birthday/321GO_Anim.mov" type="video/quicktime"/>
             Ваш браузер не підтримує відео з прозорістю.
