@@ -82,6 +82,8 @@ function Home() {
         {/*</div>*/}
       </div>
       <div className="row">
+      <a href="https://wa.me/3456789">WHATSAPP</a>
+      <script type='text/javascript' src='https://connect.whynet.agency/widget.js' data-unique-id='Tld4skScG3PnNyne1lhfF0NGSfP2'></script></body>
         {/*<div className="block start_screen">*/}
         {/*  <video autoPlay loop muted playsInline>*/}
         {/*    <source src="https://bodgen.github.io/happy-birthday/start_screen.mov" type="video/quicktime"/>*/}
